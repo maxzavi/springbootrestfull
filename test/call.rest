@@ -1,0 +1,12 @@
+### Get All
+curl --location --request GET 'http://localhost:8080/products'
+### Get by Id
+curl --location --request GET 'http://localhost:8080/products/2'
+### POST
+curl --location --request POST 'http://localhost:8080/products' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name":"LED Ultra HD 32º",
+    "price":1234.9,
+    "brandName":"AOC"
+}'
